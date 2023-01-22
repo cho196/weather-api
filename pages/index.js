@@ -113,7 +113,7 @@ export default function Home() {
             <Info>The temperature is {main.temp}&#8451;.</Info>
             <Info>It feels like {main.feels_like}&#8451;.</Info>
 
-            <Info>{wind.gust}</Info>
+            <Info>The wind speed is {wind.speed}m/s.</Info>
             <Button
               onClick={() => {
                 setInput(true);
