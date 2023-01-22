@@ -5,7 +5,8 @@ import styles from "@/styles/Home.module.css";
 import axios from "axios";
 import { useState } from "react";
 import styled from "styled-components";
-
+import Lottie from "lottie-react";
+import weatherAnimation from "../public/weather.json";
 const inter = Inter({ subsets: ["latin"] });
 
 const Flex = styled.div`
@@ -83,13 +84,18 @@ export default function Home() {
         {errorMessage}
         {input && (
           <Flex>
+            <Lottie
+              animationData={weatherAnimation}
+              loop={true}
+              style={{ height: "300px", width: "300px" }}
+            />
             <p>
               Enter a city below and hit "Enter" to see its weather details.
             </p>
             <Input
               value={location}
               onChange={(event) => setLocation(event.target.value)}
-              placeholder="enter location"
+              placeholder="Enter a city.."
               onKeyDown={searchLocation}
               type="text"
             ></Input>
