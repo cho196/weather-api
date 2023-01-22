@@ -4,7 +4,7 @@ How's The Weather Over There? (HTWOT) is a Next.js app that provides weather inf
 
 ## Tools Used
 
-Javascript, HTML, CSS, Next.js, styled-components, Axios
+Javascript, HTML, CSS, Next.js, styled-components, Axios, Lottie
 API: https://openweathermap.org/
 
 ## Installation
